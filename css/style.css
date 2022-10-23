@@ -1,0 +1,223 @@
+* {box-sizing: border-box;}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Lato', 'Avenir', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #151515;
+}
+
+h1, h2, h3, h4, p {line-height: 1.4;}
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+} 
+h2 {
+    font-size: 1.75em;
+    font-weight: 400;
+    text-align: center;
+}
+h2 span {font-size: 0.85em;}
+h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+h4 {
+    font-size: 1.25em;
+    font-weight: 400;
+}
+p {
+    font-size: 1.1em;
+    letter-spacing: 0.1px;
+}
+
+a {
+    color: #004284;
+    text-decoration: none; /* No underlining */
+}
+a:visited { /* visited link */
+    color: #484896;
+}
+a:hover, a:focus {
+    color: #000080;
+    text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:active { /* selected link */
+    color: #D15B30;
+}
+.button, .button:visited {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #004284;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom: 2px solid #777777;
+    transition: 0.2s opacity;
+}
+.button:hover, .button:focus {
+    opacity: 0.75;
+    text-decoration: none;
+}
+.button:active {
+    opacity: 1;
+    text-decoration: none;
+}
+.button.contact {
+    background-color: transparent;
+    color: #125190;
+    padding: 6px 12px;
+    text-transform: uppercase;
+    border: 2px solid #125190;
+}
+.button.contact:hover {
+    background-color: #125190;
+    color: #ffffff;
+    transition: none;
+}
+#work img, #aboutpage main img {max-width: 95%;}
+#work, #aboutpage main, #projectpage1 main, #projectpage2 main {padding-bottom: 40px;}
+#projectpage1 main img, #projectpage2 main img {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contact {
+    background-color: #eaebec;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.mystory span {
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+}
+.skillstools {margin-top: 60px;}
+.skillstools li {margin-left: -30px;}
+.skillstools2 {padding-bottom: 0px;}
+
+.row {margin-bottom: 50px;}
+.row img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+.projectinfo {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+.projectinfo h3 {
+    margin-top: 20px;
+    margin-bottom: -15px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #eaebec;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    box-shadow: 0px 10px 5px 0px rgba(50, 50, 50, 0.8);
+}
+#hero {
+    background-color: #eaebec;
+    text-align: center;
+    padding-top: 190px;
+    display: inline-block;
+    width: 100%;
+}
+#hero h2 span {font-weight: 200;}
+#aboutpage > main, #projectpage1 > main, #projectpage2 > main {
+    padding-top: 200px;
+    display: block;
+}
+.logo {
+    width: 100%;
+    max-width: 150px;
+}
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav > ul > li {
+    display: inline-block;
+    padding-top: 0px;
+}
+nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    color: #4a4a4a;  
+}
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+picture {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+picture img {
+    width: 80%;
+    display: block;
+}
+#mypicture {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* Media queries */
+
+@media only screen and (min-width: 640px) {
+    body {font-size: 18px;}
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 15px;
+        padding-right: 25px;
+    }
+    nav > ul > li > a {font-size: 18px;}
+    #hero {padding-top: 140px;}
+    .col-md-6 {width: 50%;}
+    [class*="col-"] {float: left;}
+    #work img {padding-right: 20px;}
+    #aboutpage h4 {margin-bottom: -5px;}
+    .skillstools {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .col-lg-7 {width: 60%;}
+    .col-lg-5 {width: 40%;}
+    .col-lg-4 {width: 30%;}
+    #mypicture {width: 40%;}
+    .mystory h2, .mystory span {text-align: left;}
+    .skillstools {margin: 0 0 40px 100px;}
+    .skillstools h2 {
+        text-align: left;
+        margin-bottom: 0px;
+    }
+    #aboutpage .col-md-6 {width: 100%;}
+}
+
+@media only screen and (min-width: 1440px) {
+}
+
+@media only screen and (min-width: 1920px) {
+}
