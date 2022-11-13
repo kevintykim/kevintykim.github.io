@@ -46,9 +46,9 @@ a:hover, a:focus {
     text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:active { /* selected link */
-    color: #D15B30;
+    color: #B04C27;
 }
-.button, .button:visited {
+.button, .indexbutton, .button:visited, .indexbutton:visited {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: #004284;
     color: #ffffff;
@@ -58,11 +58,11 @@ a:active { /* selected link */
     border-bottom: 2px solid #777777;
     transition: 0.2s opacity;
 }
-.button:hover, .button:focus {
+.button:hover, .button:focus, .indexbutton:hover, .indexbutton:focus {
     opacity: 0.75;
     text-decoration: none;
 }
-.button:active {
+.button:active, .indexbutton:active {
     opacity: 1;
     text-decoration: none;
 }
@@ -78,6 +78,15 @@ a:active { /* selected link */
     color: #ffffff;
     transition: none;
 }
+.indexbutton {
+    display: block;
+    width: 60%;
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 #work img, #aboutpage main img {max-width: 95%;}
 #work, #aboutpage main, #projectpage1 main, #projectpage2 main {padding-bottom: 40px;}
 #projectpage1 main img, #projectpage2 main img {
@@ -90,6 +99,7 @@ a:active { /* selected link */
     display: inline-block;
     width: 100%;
     text-align: center;
+    border-top: 3px solid #777777;
 }
 .mystory span {
     display: block;
@@ -116,6 +126,8 @@ a:active { /* selected link */
     margin-bottom: -15px;
 }
 
+/* Layout styling */
+
 header {
     position: fixed;
     width: 100%;
@@ -128,34 +140,56 @@ header {
 #hero {
     background-color: #eaebec;
     text-align: center;
-    padding-top: 190px;
+    padding-top: 100px;
     display: inline-block;
     width: 100%;
 }
 #hero h2 span {font-weight: 200;}
 #aboutpage > main, #projectpage1 > main, #projectpage2 > main {
-    padding-top: 200px;
+    padding-top: 100px;
     display: block;
 }
 .logo {
     width: 100%;
-    max-width: 150px;
+    max-width: 100px;
+}
+#indexpage .logo {
+    width: 100%;
+    max-width: 250px;
+    margin: -50px 0 30px;
+}
+#indexpage ul {padding: 0;}
+#indexpage ul li {
+    list-style-type: none;
+    margin-top: 35px;
 }
 nav > ul {
     list-style-type: none;
     padding: 0;
 }
-nav > ul > li {
-    display: inline-block;
-    padding-top: 0px;
-}
 nav > ul > li > a {
     padding: 0 15px;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
-    color: #4a4a4a;  
+    color: #4a4a4a;
 }
+.navtoggle li:not(:last-child) {display: none;}
+.navtoggle, .navtoggle.responsive {position: relative;}
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
+}
+.navtoggle.responsive {margin-bottom: -15px;}
+.navtoggle.responsive li {
+    display: block;
+    padding: 8px;
+}
+.navtoggle i {padding-top: 18px;}
+
 .container {
     max-width: 1200px;
     margin-left: auto;
@@ -171,30 +205,122 @@ picture img {
     width: 80%;
     display: block;
 }
+#workpage svg {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: block;
+}
 #mypicture {
     width: 60%;
     margin: 0 auto;
 }
 
-/* Media queries */
+.goldengate {
+    width: 77%;
+    max-width: 100%;
+    height: auto;
+}
+@keyframes color-change {
+    0% {fill: #B4E3F6;}
+    10% {fill: #B4E3F6;}
+    30% {fill: #F0C488;}
+    40% {fill: #CB964E;}
+    60% {fill: #000580;}
+    70% {fill: #000580;}
+    100% {fill: #B4E3F6;}
+}
+#Rectangle_158 {animation: 10s color-change infinite linear;}
+@keyframes sun {
+    from {transform: translate(500px,-1000px);}
+    to {transform: translate(500px,3000px);}
+}
+@keyframes moon {
+    from {transform: translate(450px,-2800px);}
+    to {transform: translate(450px,1200px);}
+}
+#Ellipse_130 {animation: 10s sun infinite linear;}
+#Subtraction_1 {animation: 10s moon infinite linear;}
+
+@keyframes fade-in-1 {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 1;}
+    80% {opacity: 1;}
+    100% {opacity: 1;}
+}
+@keyframes fade-in-2 {
+    0% {opacity: 0;}
+    20% {opacity: 0;}
+    40% {opacity: 1;}
+    60% {opacity: 1;}
+    80% {opacity: 1;}
+    100% {opacity: 1;}
+}
+@keyframes fade-in-3 {
+    0% {opacity: 0;}
+    20% {opacity: 0;}
+    40% {opacity: 0;}
+    60% {opacity: 1;}
+    80% {opacity: 1;}
+    100% {opacity: 1;}
+}
+@keyframes fade-in-4 {
+    0% {opacity: 0;}
+    20% {opacity: 0;}
+    40% {opacity: 0;}
+    60% {opacity: 0;}
+    80% {opacity: 1;}
+    100% {opacity: 1;}
+}
+#fade1 {animation: 0.75s fade-in-1 1 ease-out;}
+#fade2 {animation: 0.75s fade-in-2 1 ease-out;}
+#fade3 {animation: 0.75s fade-in-3 1 ease-out;}
+#fade4 {animation: 0.75s fade-in-4 1 ease-out;}
+
+
+
+/* MEDIA QUERIES */
 
 @media only screen and (min-width: 640px) {
     body {font-size: 18px;}
     header {
         text-align: unset;
-        padding: 20px 0 13px;
+        padding: 7px 0 2px;
     }
     nav {
         width: auto;
         float: right;
-        margin-top: 15px;
+        margin-top: -3px;
         padding-right: 25px;
     }
-    nav > ul > li > a {font-size: 18px;}
-    #hero {padding-top: 140px;}
+    nav > ul > li {
+        display: inline-block;
+        padding-top: 0px;
+    }
+    .navtoggle li:not(:last-child) {display: inline-block;}
+    .navtoggle li:last-child {display: none;}
+    .navtoggle.responsive {margin: 0;}
+    .navtoggle.responsive li {padding: 0;}
+
+    #hero {padding-top: 80px;}
     .col-md-6 {width: 50%;}
+    .col-md-12 {width: 100%;}
     [class*="col-"] {float: left;}
+    .row {margin-bottom: 30px;}
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .row1, .row2 {
+        padding-bottom: 22px;
+        border-bottom: 2px solid #151515;
+    }
     #work img {padding-right: 20px;}
+    h3 {margin-top: 0;}
     #aboutpage h4 {margin-bottom: -5px;}
     .skillstools {
         width: 100%;
