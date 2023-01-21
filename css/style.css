@@ -209,6 +209,21 @@ picture img {
     width: 80%;
     display: block;
 }
+.portfolio-text {
+    margin: auto;
+    text-align: left;
+    width: 80%;
+}
+.portfolio-outline {
+    color: #242424;
+    font-size: 1em;
+    margin-top: -7px;
+    margin-bottom: -7px;
+}
+.portfolio-paragraph {
+    margin-top: 2px;
+    margin-bottom: 8px;
+}
 #workpage svg {
     max-width: 500px;
     margin-left: auto;
