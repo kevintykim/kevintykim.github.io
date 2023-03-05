@@ -11,12 +11,12 @@ body {
 
 h1, h2, h3, h4, p {line-height: 1.4;}
 h1 {
-    font-size: 2em;
+    font-size: 1.75em;
     font-weight: 700;
     text-align: center;
 } 
 h2 {
-    font-size: 1.75em;
+    font-size: 1.5em;
     font-weight: 400;
     text-align: center;
 }
@@ -53,8 +53,9 @@ a:active { /* selected link */
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: #004284;
     color: #ffffff;
+    font-size: 18px;
     font-weight: 400;
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
     border-radius: 5px;
     border-bottom: 2px solid #777777;
     transition: 0.2s opacity;
@@ -89,6 +90,10 @@ a:active { /* selected link */
 }
 
 #work img, #aboutpage main img {max-width: 95%;}
+#work img {
+    box-shadow: 0px 5px 10px #aaaaaa;
+    margin-bottom: 20px;
+}
 #work, #aboutpage main, #projectpage1 main, #projectpage2 main {padding-bottom: 40px;}
 #projectpage1 main img, #projectpage2 main img {
     max-width: 1200px;
@@ -100,6 +105,7 @@ a:active { /* selected link */
     display: inline-block;
     width: 100%;
     text-align: center;
+    margin-top: 80px;
     border-top: 3px solid #777777;
 }
 .mystory span {
@@ -121,13 +127,9 @@ a:active { /* selected link */
     width: 80%;
 }
 .projectinfo {
-    display: block;
     width: 80%;
     margin: 0 auto;
-}
-.projectinfo h3 {
-    margin-top: 20px;
-    margin-bottom: -15px;
+    text-align: center;
 }
 
 /* Layout styling */
@@ -194,6 +196,10 @@ nav > ul > li > a {
 }
 .navtoggle i {padding-top: 18px;}
 
+.container-zero {
+    width: 100%;
+    padding: 40px 0px 40px 0px;
+}
 .container {
     max-width: 1200px;
     margin-left: auto;
@@ -214,7 +220,10 @@ picture img {
     text-align: left;
     width: 80%;
 }
-h4.portfolio-text {text-align: center;}
+h4.portfolio-text {
+    text-align: center;
+    margin-bottom: 5px;
+}
 .portfolio-outline {
     color: #242424;
     font-size: 1em;
@@ -222,9 +231,10 @@ h4.portfolio-text {text-align: center;}
     margin-bottom: -7px;
 }
 .portfolio-paragraph {
-    font-size: 0.95em;
+    font-size: 0.9em;
     margin-top: 2px;
     margin-bottom: 8px;
+    line-height: 28px;
 }
 #workpage svg {
     max-width: 500px;
@@ -327,7 +337,7 @@ h4.portfolio-text {text-align: center;}
     .navtoggle.responsive li {padding: 0;}
 
     #hero {padding-top: 80px;}
-    .col-md-6 {width: 50%;}
+    .col-md-4 {width: 50%;} /* CHANGE TO 33.33% LATER */
     .col-md-12 {width: 100%;}
     [class*="col-"] {float: left;}
     .row {margin-bottom: 30px;}
@@ -336,11 +346,6 @@ h4.portfolio-text {text-align: center;}
         clear: both;
         display: table;
     }
-    .row1, .row2 {
-        padding-bottom: 22px;
-        border-bottom: 2px solid #151515;
-    }
-    #work img {padding-right: 20px;}
     h3 {margin-top: 0;}
     #aboutpage h4 {margin-bottom: -5px;}
     .skillstools {
