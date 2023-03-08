@@ -230,6 +230,10 @@ h4.portfolio-text {
     margin-top: -7px;
     margin-bottom: -7px;
 }
+.portfolio-info {
+    width: 100%;
+    margin: 0 auto;
+}
 .portfolio-paragraph {
     font-size: 0.9em;
     margin-top: 2px;
@@ -247,69 +251,6 @@ h4.portfolio-text {
     width: 60%;
     margin: 0 auto;
 }
-
-.goldengate {
-    width: 77%;
-    max-width: 100%;
-    height: auto;
-}
-@keyframes color-change {
-    0% {fill: #B4E3F6;}
-    10% {fill: #B4E3F6;}
-    30% {fill: #F0C488;}
-    40% {fill: #CB964E;}
-    60% {fill: #000580;}
-    70% {fill: #000580;}
-    100% {fill: #B4E3F6;}
-}
-#Rectangle_158 {animation: 10s color-change infinite linear;}
-@keyframes sun {
-    from {transform: translate(500px,-1000px);}
-    to {transform: translate(500px,3000px);}
-}
-@keyframes moon {
-    from {transform: translate(450px,-2800px);}
-    to {transform: translate(450px,1200px);}
-}
-#Ellipse_130 {animation: 10s sun infinite linear;}
-#Subtraction_1 {animation: 10s moon infinite linear;}
-
-@keyframes fade-in-1 {
-    0% {opacity: 0;}
-    20% {opacity: 1;}
-    40% {opacity: 1;}
-    60% {opacity: 1;}
-    80% {opacity: 1;}
-    100% {opacity: 1;}
-}
-@keyframes fade-in-2 {
-    0% {opacity: 0;}
-    20% {opacity: 0;}
-    40% {opacity: 1;}
-    60% {opacity: 1;}
-    80% {opacity: 1;}
-    100% {opacity: 1;}
-}
-@keyframes fade-in-3 {
-    0% {opacity: 0;}
-    20% {opacity: 0;}
-    40% {opacity: 0;}
-    60% {opacity: 1;}
-    80% {opacity: 1;}
-    100% {opacity: 1;}
-}
-@keyframes fade-in-4 {
-    0% {opacity: 0;}
-    20% {opacity: 0;}
-    40% {opacity: 0;}
-    60% {opacity: 0;}
-    80% {opacity: 1;}
-    100% {opacity: 1;}
-}
-#fade1 {animation: 0.75s fade-in-1 1 ease-out;}
-#fade2 {animation: 0.75s fade-in-2 1 ease-out;}
-#fade3 {animation: 0.75s fade-in-3 1 ease-out;}
-#fade4 {animation: 0.75s fade-in-4 1 ease-out;}
 
 
 
@@ -352,6 +293,7 @@ h4.portfolio-text {
         width: 100%;
         margin-bottom: 30px;
     }
+    .portfolio-info {width: 60%;}
 }
 
 @media only screen and (min-width: 1024px) {
