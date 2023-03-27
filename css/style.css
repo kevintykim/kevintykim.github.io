@@ -251,7 +251,7 @@ h4.portfolio-text {
     width: 60%;
     margin: 0 auto;
 }
-
+.coverart img {margin-top: 20px;}
 
 
 /* MEDIA QUERIES */
@@ -262,6 +262,7 @@ h4.portfolio-text {
         text-align: unset;
         padding: 7px 0 2px;
     }
+    .coverart img {margin-top: 0px;}
     nav {
         width: auto;
         float: right;
