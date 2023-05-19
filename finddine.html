@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Kevin Kim's Portfolio - FindDine</title>
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+        <link href="img/favicon.ico" rel="shortcut icon">
+        <script src="https://kit.fontawesome.com/319bcd23ee.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="projectpage">
+        <header>
+            <div class="container">
+                <div class="navtoggle" id="myNavtoggle">
+                    <a href="home.html"><img class="logo" src="img/logo.svg" alt="Logo" width="120"></a>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Work</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="files/Kevin-Kim-Resume.pdf" target="_blank">Resume</a></li>
+                            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <picture class="coverart">
+                    <source srcset="img/finddine/casestudy1@1x.png" media="(max-width:767px)" >
+                    <img src="img/finddine/casestudy1@2x.png" alt="Case study" >
+                </picture>
+
+                <br />
+                <div class="portfolio-info">
+                    <p class="portfolio-text portfolio-outline" style="padding-bottom: 12px; text-align: center; border-bottom: 2px solid #e7e7e7;">
+                        <b style="text-transform: uppercase;">Project Overview</b><br />
+                        Design a restaurant locator app, with four responsive screen widths.
+                    </p>
+                    
+                    <br />
+
+                    <div style="padding-bottom: 20px;">
+                        <p class="portfolio-text portfolio-outline" style="text-align: center; width: 33%; float: left;">
+                            <b style="text-transform: uppercase;">Role</b><br />UI/UX Designer
+                        </p>
+                        <p class="portfolio-text portfolio-outline" style="text-align: center; width: 33%; float: left;">
+                            <b style="text-transform: uppercase;">Tools</b><br />Adobe XD
+                        </p>
+                        <p class="portfolio-text portfolio-outline" style="text-align: center; width: 33%; float: right;">
+                            <b style="text-transform: uppercase;">Duration</b><br />3 months
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <br /><br />
+            
+            <div class="container-zero" style="background: #fff6f6;">
+                <div class="container">
+                    <h4 class="portfolio-text">User Research</h4>
+                    <p class="portfolio-text portfolio-paragraph" style="margin-bottom: 25px;">To get an understanding of how to make FindDine appealing, I interviewed potential users for their thoughts on existing food finder apps. Their answers yielded ideas for what to implement (search filters, detailed restaurant info) and what to avoid (feature clutter).</p>
+
+                    <picture>
+                        <source srcset="img/finddine/casestudy2@1x.png" media="(max-width:767px)" >
+                        <img src="img/finddine/casestudy2@2x.png" alt="User research" style="margin-bottom: 20px;" >
+                    </picture>
+                </div>
+            </div>
+            
+            <br /><br />
+
+            <div class="container">
+                <h4 class="portfolio-text">Minimum Viable Product</h4>
+                <p class="portfolio-text portfolio-paragraph" style="margin-bottom: 10px;">I boiled my user research findings down to a concrete vision: an app that lets users find restaurants quickly, and also lets them access detailed restaurant information just as quickly.</p>
+                <br />
+                <picture>
+                    <source srcset="img/finddine/casestudy3@1x.png" media="(max-width:767px)" >
+                    <img src="img/finddine/casestudy3@2x.png" alt="MVP" >
+                </picture>
+            </div>
+            
+            <br /><br />
+
+            <div class="container-zero" style="background: #fff6f6;">
+                <div class="container">
+                    <h4 class="portfolio-text">Exploratory Sketches</h4>
+                    <picture>
+                        <source srcset="img/finddine/casestudy4@1x.png" media="(max-width:767px)" >
+                        <img src="img/finddine/casestudy4@2x.png" alt="Exploratory sketches" style="margin-top: 20px; margin-bottom: 20px;" >
+                    </picture>
+                    <p class="portfolio-text portfolio-paragraph">I created a simple design, in keeping with Hick’s law. The intent was to hide all of the detailed information by default, allowing users to understand the UI easily. The app would also feature intuitive buttons (represented by the three squares on the Restaurant Profile screen) to let users quickly jump to the detailed info they wanted.</p>
+                </div>
+            </div>
+            
+            <br /><br />
+
+            <div class="container">
+                <h4 class="portfolio-text">Usability Test Results</h4>
+                <p class="portfolio-text portfolio-paragraph" style="margin-bottom: 30px;">To weed out pain points in the early sketches, I conducted a rapid prototype test with several participants. The test results revealed potential confusion with the UI elements. The results also suggested that, contrary to my earlier thoughts, it would be better to show a limited amount of detailed info rather than hide all of it by default.</p>
+                <picture>
+                    <source srcset="img/finddine/casestudy5@1x.png" media="(max-width:767px)" >
+                    <img src="img/finddine/casestudy5@2x.png" alt="Usability test results" style="margin-top: 40px; margin-bottom: 40px;" >
+                </picture>
+                <p class="portfolio-text portfolio-paragraph" style="margin-top: 30px;">I was torn between two possible solutions for the first issue, and decided to conduct an A/B preference test to see whether I should use text or icons. But first I created more detailed wireframes, so the preference test could more accurately represent the final app screens.</p>
+            </div>
+            
+            <br /><br />
+
+            <div class="container-zero" style="background: #fff6f6;">
+                <div class="container">
+                    <h4 class="portfolio-text">Wireframes</h4>
+                    <p class="portfolio-text portfolio-paragraph" style="margin-bottom: 30px; text-align: center;">In addition to implementing the usability test feedback, I took this opportunity to start working on the other breakpoints.</p>
+                    <picture>
+                        <source srcset="img/finddine/casestudy6@1x.png" media="(max-width:767px)" >
+                        <img src="img/finddine/casestudy6@2x.png" alt="Wireframes" style="margin-bottom: 30px;" >
+                    </picture>
+                </div>
+            </div>
+            
+            <br /><br />
+
+            <div class="container">
+                <h4 class="portfolio-text">Preference Test Results</h4>
+                <p class="portfolio-text portfolio-paragraph" style="margin-bottom: 20px;">After the wireframes came the A/B preference test, using a mid-fidelity version of the Search Results screen.<br />
+                    The vast majority of the testers found text more appealing than icons. Their rationales stressed how much more clarity this brought to the app, and informed my designs during the final mockup process.
+                </p>
+                
+                <picture>
+                    <source srcset="img/finddine/casestudy7@1x.png" media="(max-width:767px)" >
+                    <img src="img/finddine/casestudy7@2x.png" alt="Preference test results" >
+                </picture>
+            </div>
+            
+            <br /><br />
+
+            <div class="container-zero" style="background: #fff6f6;">
+                <div class="container">
+                    <h4 class="portfolio-text">High-Fidelity Mockups</h4>
+                    <p class="portfolio-text portfolio-paragraph" style="margin-bottom: 60px; text-align: center;">Finally, I expanded all of my earlier screen designs into detailed mockups that would fit all four breakpoints.</p>
+                    
+                    <picture>
+                        <source srcset="img/finddine/casestudy8a@1x.png" media="(max-width:767px)" >
+                        <img src="img/finddine/casestudy8a@2x.png" alt="High-fidelity mockups" style="margin-top: 15px;" >
+                    </picture>
+                    <p class="portfolio-text portfolio-paragraph" style="margin-top: -5px; text-align: center;"><span style="font-weight: bold; text-transform: uppercase;">Login</span>: For the largest breakpoint, I used the extra space to orient the UI elements more horizontally. I applied the same principle throughout the following pages.</p>
+                    <br /><br />
+                    
+                    <picture>
+                        <source srcset="img/finddine/casestudy8b@1x.png" media="(max-width:767px)" >
+                        <img src="img/finddine/casestudy8b@2x.png" alt="High-fidelity mockups" >
+                    </picture>
+                    <p class="portfolio-text portfolio-paragraph" style="margin-top: -5px; text-align: center;"><span style="font-weight: bold; text-transform: uppercase;">Home</span>: The two smallest breakpoints do not display the expanded History and Recommendations lists. I reserved these elements for the larger viewports, which were wide enough to accommodate them without creating visual clutter.</p>
+                    <br /><br />
+
+                    <picture>
+                        <source srcset="img/finddine/casestudy8c@1x.png" media="(max-width:767px)" >
+                        <img src="img/finddine/casestudy8c@2x.png" alt="High-fidelity mockups" >
+                    </picture>
+                    <p class="portfolio-text portfolio-paragraph" style="margin-top: -5px; text-align: center;"><span style="font-weight: bold; text-transform: uppercase;">Search results</span></p>
+                    <br /><br />
+
+                    <picture>
+                        <source srcset="img/finddine/casestudy8d@1x.png" media="(max-width:767px)" >
+                        <img src="img/finddine/casestudy8d@2x.png" alt="High-fidelity mockups" >
+                    </picture>
+                    <p class="portfolio-text portfolio-paragraph" style="margin-top: -5px; text-align: center;"><span style="font-weight: bold; text-transform: uppercase;">Restaurant profile</span></p>
+                    <br /><br />
+
+                    <picture>
+                        <source srcset="img/finddine/casestudy8e@1x.png" media="(max-width:767px)" >
+                        <img src="img/finddine/casestudy8e@2x.png" alt="High-fidelity mockups" >
+                    </picture>
+                    <p class="portfolio-text portfolio-paragraph" style="margin-top: -5px; margin-bottom: 50px; text-align: center;"><span style="font-weight: bold; text-transform: uppercase;">Map navigation</span></p>
+                </div>
+            </div>
+            
+            <br /><br />
+
+            <div class="container">
+                <h4 class="portfolio-text" style="margin-bottom: 20px;">Retrospective</h4>
+                <p class="portfolio-text portfolio-paragraph">As my first hands-on venture into the UX phase of design, FindDine was a valuable insight into processes such as user research and MVP hypothesis. One of my main goals with this app was to avoid an overcomplicated user interface, and my UX learnings helped me create a simple and efficient user journey.
+                    <br /><br />
+                    Designing for a variety of screen widths was a great way for me to gain more experience with design software. The process of expanding my initial wireframes greatly improved my grasp of tools such as grid layouts and responsive resizing.
+                    <br /><br />
+                    The project’s biggest roadblocks occurred during the mid-fidelity wireframing phase, where I created so many potential designs (e.g., text vs. icons, proper color use) that I became unsure which ideas to choose. To overcome this, I slowed down to focus and refresh myself, and even sought out online inspirations to see my fellow designers’ approaches to similar apps. The A/B preference test also allowed me to gauge user response to my work so far.
+                    <br /><br />
+                    My most meaningful and impactful UX insights underlined the problem of apps presenting an overwhelming amount of information and obstructing users from their goals. People don’t want app interaction to feel like a struggle, especially when they’re hungry and in search of a good restaurant. This sentiment, above all others, wielded the most influence on FindDine’s creation.
+                </p>
+                <br />
+                <picture>
+                    <source srcset="img/finddine/casestudy9@1x.png" media="(max-width:767px)" >
+                    <img src="img/finddine/casestudy9@2x.png" alt="Thanks!" >
+                </picture>
+            </div>
+
+            <div style="margin-top: 50px; text-align: center;">
+                <h3>See more of my work:</h3>
+                <a href="80sreverb.html" class="button" style="margin-bottom: 10px; padding: 8px 0px 8px 0px; width: 180px;">'80s Reverb</a>
+                <br />
+                <a href="gameplus.html" class="button" style="margin-bottom: 10px; padding: 8px 0px 8px 0px; width: 180px;">GamePlus</a>
+            </div>
+        </main>
+
+        <footer id="contact">
+            <div class="container">
+                <h1>Contact Me</h1>
+                <p style="margin-top: -15px;">Do you like my work and want to discuss opportunities?<br />Let’s get in touch!</p>
+            
+                <div style="margin-top: 30px;">
+
+                    <a href="mailto:kevin.ty.kim@gmail.com" style="margin-right: 12px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="64px" height="64px" viewBox="0 0 256 256" xml:space="preserve">
+
+                            <defs>
+                            </defs>
+                            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                <circle cx="45" cy="45" r="45" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                                <polygon points="21.07,31.48 36.59,45.44 21.07,58.53 " style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                                <polygon points="45,48.97 23.68,29.79 66.32,29.79 " style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                                <path d="M 38.842 47.465 l 5.155 4.637 c 0.286 0.257 0.645 0.385 1.003 0.385 s 0.718 -0.128 1.003 -0.385 l 5.155 -4.637 l 15.1 12.743 H 23.741 L 38.842 47.465 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                <polygon points="53.41,45.44 68.93,31.48 68.93,58.53 " style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                            </g>
+                        </svg>
+                    </a>
+
+                    <a href="https://linkedin.com/in/kevintykim" target="_blank" style="margin-left: 12px;">
+                        <svg width="64px" height="64px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Linkedin</title>
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <path d="M20.9716667,33.5527338 L25.001,33.5527338 L25.001,27.1328007 C25.001,25.439485 25.3213333,23.7988354 27.4206667,23.7988354 C29.491,23.7988354 29.517,25.7351486 29.517,27.2404662 L29.517,33.5527338 L33.5506667,33.5527338 L33.5506667,26.4341413 C33.5506667,22.9381777 32.796,20.2505391 28.711,20.2505391 C26.7483333,20.2505391 25.432,21.3265278 24.8943333,22.3471839 L24.839,22.3471839 L24.839,20.5725357 L20.9716667,20.5725357 L20.9716667,33.5527338 Z M16.423,14.1202696 C15.1273333,14.1202696 14.0823333,15.1682587 14.0823333,16.4595785 C14.0823333,17.7508984 15.1273333,18.7992208 16.423,18.7992208 C17.7133333,18.7992208 18.761,17.7508984 18.761,16.4595785 C18.761,15.1682587 17.7133333,14.1202696 16.423,14.1202696 L16.423,14.1202696 Z M14.4026667,33.5527338 L18.4406667,33.5527338 L18.4406667,20.5725357 L14.4026667,20.5725357 L14.4026667,33.5527338 Z M9.76633333,40 C8.79033333,40 8,39.2090082 8,38.2336851 L8,9.76631493 C8,8.79065843 8.79033333,8 9.76633333,8 L38.234,8 C39.2093333,8 40,8.79065843 40,9.76631493 L40,38.2336851 C40,39.2090082 39.2093333,40 38.234,40 L9.76633333,40 Z" id="Shape" fill="#000000"></path>
+                            </g>
+                        </svg>
+                    </a>
+
+                </div>
+            <br />
+            <p class="copyright" style="font-size: 12px;"></p>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="js/scripts.js"></script>
+
+    </body>
+
+</html>
