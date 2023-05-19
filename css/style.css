@@ -151,7 +151,7 @@ header {
 }
 #hero h2 span {font-weight: 200;}
 #aboutpage > main, .projectpage > main {
-    padding-top: 100px;
+    padding-top: 95px;
     display: block;
 }
 .logo {
