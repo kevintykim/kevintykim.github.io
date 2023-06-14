@@ -1,15 +1,19 @@
 * {box-sizing: border-box;}
 
 body {
-    background-color: #ffffff;
-    font-family: 'Lato', 'Avenir', sans-serif;
+    color: #ffffff;
+    background-color: #04003a;
+    font-family: 'Roboto', 'Lato', 'Avenir', sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.6;
-    color: #151515;
 }
 
-h1, h2, h3, h4, p {line-height: 1.4;}
+h1, h2, h3, h4 {
+    line-height: 1.4;
+    font-family: 'Lato';
+}
+p {line-height: 1.4;}
 h1 {
     font-size: 1.75em;
     font-weight: 700;
@@ -36,26 +40,24 @@ p {
 }
 
 a {
-    color: #004284;
+    color: #f2f2f2;
     text-decoration: none; /* no underline */
 }
-a:visited { /* visited link */
-    color: #484896;
-}
 a:hover, a:focus {
-    color: #000080;
-    text-decoration: underline; /* underline when hovering over a link */
+    text-decoration: underline;
 }
-a:active { /* selected link */
-    color: #B04C27;
+a:active {
+    color: #ffffff;
 }
 .button, .indexbutton, .button:visited, .indexbutton:visited {
     display: inline-block;
+    margin: 0 auto;
+    padding: 8px 0px 8px 0px;
+    text-align: center;
     background-color: #004284;
     color: #ffffff;
     font-size: 18px;
     font-weight: 400;
-    padding: 10px 20px 10px 20px;
     border-radius: 5px;
     border-bottom: 2px solid #777777;
     transition: 0.2s opacity;
@@ -68,16 +70,16 @@ a:active { /* selected link */
     opacity: 1;
     text-decoration: none;
 }
-.button.contact {
+.button.contact1 {
     background-color: transparent;
-    color: #125190;
+    color: #cefaff;
     padding: 6px 12px;
     text-transform: uppercase;
-    border: 2px solid #125190;
+    border: 2px solid #cefaff;
 }
-.button.contact:hover {
-    background-color: #125190;
-    color: #ffffff;
+.button.contact1:hover {
+    background-color: #cefaff;
+    color: #04003a;
     transition: none;
 }
 .indexbutton {
@@ -99,14 +101,40 @@ a:active { /* selected link */
     margin-left: auto;
     margin-right: auto;
 }
-#contact {
-    background-color: #eaebec;
+footer {
+    color: #000000;
+    background-color: #eeeeee;
     display: inline-block;
     width: 100%;
-    text-align: center;
-    margin-top: 80px;
-    border-top: 3px solid #777777;
+    font-size: 18px;
+    /* border-top: #ffffff solid 3px; */
 }
+footer a {color: #000000;}
+footer div {margin-top: 5px;}
+footer path {fill: #04003a;}
+.footercontact {width: 100%;}
+.footercontact a {
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 5px;
+}
+.footerprojects {
+    width: 100%;
+    text-align: left;
+    margin-top: 50px;
+}
+.footerprojects a {
+    display: inline-block;
+    font-size: 19px;
+    margin-bottom: 3px;
+}
+footer h3 {margin-bottom: 15px;}
+.footercopyright {
+    font-size: 11px;
+    margin-top: 50px;
+    text-align: center;
+}
+
 .mystory span {
     display: block;
     text-align: center;
@@ -125,25 +153,22 @@ a:active { /* selected link */
     margin: 0 auto;
     width: 80%;
 }
-.projectinfo {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-}
 
 /* Layout styling */
 
 header {
+    color: #ffffff;
+    background-color: rgba(3, 0, 58, 0.85);
+    backdrop-filter: blur(4px);
     position: fixed;
+    z-index: 5;
     width: 100%;
-    background-color: #eaebec;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 10px;
     padding-bottom: 5px;
-    box-shadow: 0px 10px 5px 0px rgba(50, 50, 50, 0.8);
+    border-bottom: #aaaaaa solid 2px;
 }
 #hero {
-    background-color: #eaebec;
     text-align: center;
     padding-top: 100px;
     display: inline-block;
@@ -154,20 +179,6 @@ header {
     padding-top: 95px;
     display: block;
 }
-.logo {
-    width: 100%;
-    max-width: 100px;
-}
-#indexpage .logo {
-    width: 100%;
-    max-width: 200px;
-    margin: -60px 0 15px;
-}
-#indexpage ul {padding: 0;}
-#indexpage ul li {
-    list-style-type: none;
-    margin-top: 35px;
-}
 nav > ul {
     list-style-type: none;
     padding: 0;
@@ -175,17 +186,15 @@ nav > ul {
 nav > ul > li > a {
     padding: 0 15px;
     text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 700;
-    color: #4a4a4a;
+    font-size: 19px;
 }
 .navtoggle li:not(:last-child) {display: none;}
 .navtoggle, .navtoggle.responsive {position: relative;}
 .navtoggle li .icon {
     position: absolute;
-    right: 0;
-    top: 2px;
-    font-size: 20px;
+    right: 8px;
+    top: -3px;
+    font-size: 32px;
     padding-right: 0;
 }
 .navtoggle.responsive {margin-bottom: -15px;}
@@ -195,16 +204,16 @@ nav > ul > li > a {
 }
 .navtoggle i {padding-top: 18px;}
 
-.container-zero {
-    width: 100%;
-    padding: 40px 0px 40px 0px;
-}
+.portfolio-heading {padding-top: 45px;}
 .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
 }
+.container-two {background: #fff6f6;}
+.container-three {background: #f2f8ff;}
+
 picture {
     max-width: 900px;
     margin-left: auto;
@@ -214,6 +223,27 @@ picture img {
     width: 80%;
     display: block;
 }
+picture svg {
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.svgbutton {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: -20px;
+    transition: all .2s ease-in-out;
+}
+.svgbutton:hover {transform: scale(1.1);}
+
+.project-main {color: #000000;}
+.retrospective {
+    color: #ffffff;
+    background-color: #04003a;
+    padding-bottom: 60px;
+}
 .portfolio-text {
     margin: auto;
     text-align: left;
@@ -222,9 +252,10 @@ picture img {
 h4.portfolio-text {
     text-align: center;
     margin-bottom: 5px;
+    font-weight: 700;
 }
 .portfolio-outline {
-    color: #242424;
+    color: #ffffff;
     font-size: 0.9em;
     margin-top: -7px;
     margin-bottom: -7px;
@@ -236,7 +267,6 @@ h4.portfolio-text {
 .portfolio-paragraph {
     font-size: 0.9em;
     margin-top: 2px;
-    margin-bottom: 8px;
     line-height: 28px;
 }
 #mypicture {
@@ -250,28 +280,10 @@ h4.portfolio-text {
 
 @media only screen and (min-width: 640px) {
     body {font-size: 18px;}
-    header {
-        text-align: unset;
-        padding: 7px 0 2px;
-    }
     .coverart img {margin-top: 0px;}
-    nav {
-        width: auto;
-        float: right;
-        margin-top: -3px;
-        padding-right: 25px;
-    }
-    nav > ul > li {
-        display: inline-block;
-        padding-top: 0px;
-    }
-    .navtoggle li:not(:last-child) {display: inline-block;}
-    .navtoggle li:last-child {display: none;}
-    .navtoggle.responsive {margin: 0;}
-    .navtoggle.responsive li {padding: 0;}
 
     #hero {padding-top: 80px;}
-    .col-md-4 {width: 33.33%;}
+    .col-md-4 {width: 100%;}
     .col-md-12 {width: 100%;}
     [class*="col-"] {float: left;}
     .row {margin-bottom: 30px;}
@@ -287,6 +299,42 @@ h4.portfolio-text {
         margin-bottom: 30px;
     }
     .portfolio-info {width: 60%;}
+    .svgbutton {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .footercontact {
+        width: 50%;
+        float: left;
+    }
+    .footerprojects {
+        width: 50%;
+        float: left;
+        text-align: right;
+        margin-top: 0px;
+    }
+    .footercopyright {margin-top: 200px;}
+}
+
+@media only screen and (min-width: 800px) {
+    header {
+        text-align: unset;
+        padding: 5px 0 8px;
+    }
+    nav {
+        width: auto;
+        float: right;
+        margin-top: -3px;
+        padding-right: 25px;
+    }
+    nav > ul > li {
+        display: inline-block;
+        padding-top: 0px;
+    }
+    .navtoggle li:not(:last-child) {display: inline-block;}
+    .navtoggle li:last-child {display: none;}
+    .navtoggle.responsive {margin: 0;}
+    .navtoggle.responsive li {padding: 0;}
 }
 
 @media only screen and (min-width: 1024px) {

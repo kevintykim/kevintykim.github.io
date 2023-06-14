@@ -1,0 +1,269 @@
+@keyframes reverb1 {
+    0% {transform: translate(2000px,35px);}
+    10% {transform: translate(2000px,35px);}
+    15% {transform: translate(761px,35px);}
+    30% {transform: translate(761px,35px);}
+    40% {transform: translate(-700px,35px);}
+    100% {transform: translate(-700px,35px);}
+}
+@keyframes reverb2 {
+    0% {transform: translate(2000px,35px);}
+    30% {transform: translate(2000px,35px);}
+    35% {transform: translate(761px,35px);}
+    50% {transform: translate(761px,35px);}
+    60% {transform: translate(-700px,35px);}
+    100% {transform: translate(-700px,35px);}
+}
+@keyframes reverb3 {
+    0% {transform: translate(2000px,35px);}
+    50% {transform: translate(2000px,35px);}
+    55% {transform: translate(761px,35px);}
+    70% {transform: translate(761px,35px);}
+    80% {transform: translate(-700px,35px);}
+    100% {transform: translate(-700px,35px);}
+}
+@keyframes reverb4 {
+    0% {transform: translate(2000px,35px);}
+    70% {transform: translate(2000px,35px);}
+    75% {transform: translate(761px,35px);}
+    90% {transform: translate(761px,35px);}
+    100% {transform: translate(-700px,35px);}
+}
+#Reverb_screen1 {animation: 8s reverb1 infinite ease-out;}
+#Reverb_screen2 {animation: 8s reverb2 infinite ease-out;}
+#Reverb_screen3 {animation: 8s reverb3 infinite ease-out;}
+#Reverb_screen4 {animation: 8s reverb4 infinite ease-out;}
+/*
+@keyframes reverblogo {
+    0% {opacity: 1;}
+    12% {opacity: 1;}
+    15% {opacity: 0.5;}
+    90% {opacity: 0.5;}
+    93% {opacity: 1;}
+    100% {opacity: 1;}
+}
+#Reverb_logo {animation: 8s reverblogo infinite ease-out;}
+*/
+
+
+
+@keyframes finddine1 {
+    0% {transform: translate(960px,360px) scale(0);}
+    10% {transform: translate(960px,360px) scale(0);}
+    12% {transform: translate(750px,8px) scale(1.105);}
+    13% {transform: translate(775px,45px) scale(0.9737);}
+    14% {transform: translate(770px,35px) scale(1);}
+    90% {transform: translate(770px,35px) scale(1);}
+    91% {transform: translate(960px,360px) scale(0);}
+    100% {transform: translate(960px,360px) scale(0);}
+}
+@keyframes finddine2 {
+    0% {transform: translate(960px,360px) scale(0);}
+    30% {transform: translate(960px,360px) scale(0);}
+    32% {transform: translate(747.25px,10px) scale(1.03);}
+    33% {transform: translate(759.5px,30px) scale(0.97);}
+    34% {transform: translate(753.25px,20px) scale(1);}
+    90% {transform: translate(753.25px,20px) scale(1);}
+    91% {transform: translate(960px,360px) scale(0);}
+    100% {transform: translate(960px,360px) scale(0);}
+}
+@keyframes finddine3 {
+    0% {transform: translate(960px,360px) scale(0);}
+    50% {transform: translate(960px,360px) scale(0);}
+    52% {transform: translate(717.5px,10px) scale(1.03);}
+    53% {transform: translate(731.25px,30px) scale(0.97);}
+    54% {transform: translate(724.5px,20px) scale(1);}
+    90% {transform: translate(724.5px,20px) scale(1);}
+    91% {transform: translate(960px,360px) scale(0);}
+    100% {transform: translate(960px,360px) scale(0);}
+}
+@keyframes finddine4 {
+    0% {transform: translate(960px,360px) scale(0);}
+    70% {transform: translate(960px,360px) scale(0);}
+    72% {transform: translate(394.75px,10px) scale(1.03);}
+    73% {transform: translate(427px,30px) scale(0.97);}
+    74% {transform: translate(411px,20px) scale(1);}
+    90% {transform: translate(411px,20px) scale(1);}
+    93% {transform: translate(383.4px,3px) scale(1.05);}
+    95% {transform: translate(960px,360px) scale(0);}
+    100% {transform: translate(960px,360px) scale(0);}
+}
+#Finddine_screen1 {animation: 8s finddine1 infinite linear;}
+#Finddine_screen2 {animation: 8s finddine2 infinite linear;}
+#Finddine_screen3 {animation: 8s finddine3 infinite linear;}
+#Finddine_screen4 {animation: 8s finddine4 infinite linear;}
+/*
+@keyframes finddinelogo {
+    0% {opacity: 1;}
+    11% {opacity: 1;}
+    14% {opacity: 0;}
+    84% {opacity: 0;}
+    85% {opacity: 1;}
+    100% {opacity: 1;}
+}
+#Finddine_logo {animation: 8s finddinelogo infinite ease-in-out;}
+*/
+
+
+
+@keyframes gameplus1 {
+    0% {transform: translate(350px,800px);}
+    10% {transform: translate(350px,800px);}
+    25% {transform: translate(350px,37px);}
+    47% {transform: translate(350px,37px);}
+    57% {transform: translate(350px,-700px);}
+    100% {transform: translate(350px,-700px);}
+}
+@keyframes gameplus2 {
+    0% {transform: translate(760px,800px);}
+    13% {transform: translate(760px,800px);}
+    28% {transform: translate(760px,37px);}
+    50% {transform: translate(760px,37px);}
+    60% {transform: translate(760px,-700px);}
+    100% {transform: translate(760px,-700px);}
+}
+@keyframes gameplus3 {
+    0% {transform: translate(1170px,800px);}
+    16% {transform: translate(1170px,800px);}
+    31% {transform: translate(1170px,37px);}
+    53% {transform: translate(1170px,37px);}
+    63% {transform: translate(1170px,-700px);}
+    100% {transform: translate(1170px,-700px);}
+}
+@keyframes gameplus4 {
+    0% {transform: translate(350px,800px);}
+    47% {transform: translate(350px,800px);}
+    62% {transform: translate(350px,37px);}
+    84% {transform: translate(350px,37px);}
+    94% {transform: translate(350px,-700px);}
+    100% {transform: translate(350px,-700px);}
+}
+@keyframes gameplus5 {
+    0% {transform: translate(760px,800px);}
+    50% {transform: translate(760px,800px);}
+    65% {transform: translate(760px,37px);}
+    87% {transform: translate(760px,37px);}
+    97% {transform: translate(760px,-700px);}
+    100% {transform: translate(760px,-700px);}
+}
+@keyframes gameplus6 {
+    0% {transform: translate(1170px,800px);}
+    53% {transform: translate(1170px,800px);}
+    68% {transform: translate(1170px,37px);}
+    90% {transform: translate(1170px,37px);}
+    100% {transform: translate(1170px,-700px);}
+}
+#Gameplus_screen1 {animation: 8s gameplus1 infinite ease-in-out;}
+#Gameplus_screen2 {animation: 8s gameplus2 infinite ease-in-out;}
+#Gameplus_screen3 {animation: 8s gameplus3 infinite ease-in-out;}
+#Gameplus_screen4 {animation: 8s gameplus4 infinite ease-in-out;}
+#Gameplus_screen5 {animation: 8s gameplus5 infinite ease-in-out;}
+#Gameplus_screen6 {animation: 8s gameplus6 infinite ease-in-out;}
+#Reverb_screen1, #Reverb_screen2, #Reverb_screen3, #Reverb_screen4, #Finddine_screen1, #Finddine_screen2, #Finddine_screen3, #Finddine_screen4, #Gameplus_screen1, #Gameplus_screen2, #Gameplus_screen3, #Gameplus_screen4, #Gameplus_screen5, #Gameplus_screen6 {animation-delay: 1500ms; animation-fill-mode: backwards;}
+/*
+@keyframes gamepluslogo {
+    0% {opacity: 0.5;}
+    17% {opacity: 0.5;}
+    20% {opacity: 0;}
+    93% {opacity: 0;}
+    96% {opacity: 0.5;}
+    100% {opacity: 0.5;}
+}
+#Gameplus_logo {animation: 8s gamepluslogo infinite ease-in-out;}
+*/
+
+@keyframes headline1_white {
+    0% {opacity: 0;}
+    4.9% {opacity: 0;}
+    5% {opacity: 1;}
+    9.9% {opacity: 1;}
+    10% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes headline2_white {
+    0% {opacity: 0;}
+    14.9% {opacity: 0;}
+    15% {opacity: 1;}
+    15.9% {opacity: 1;}
+    16% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes headline3_white {
+    0% {opacity: 0;}
+    15.9% {opacity: 0;}
+    16% {opacity: 1;}
+    16.9% {opacity: 1;}
+    17% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes headline4_white {
+    0% {opacity: 0;}
+    16.9% {opacity: 0;}
+    17% {opacity: 1;}
+    17.9% {opacity: 1;}
+    18% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes headline5_white {
+    0% {opacity: 0;}
+    17.9% {opacity: 0;}
+    18% {opacity: 1;}
+    18.9% {opacity: 1;}
+    19% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#rec1_white {animation: 10s headline1_white 1 linear; animation-fill-mode: forwards;}
+#rec2_white {animation: 10s headline2_white 1 linear; animation-fill-mode: forwards;}
+#rec3_white {animation: 10s headline3_white 1 linear; animation-fill-mode: forwards;}
+#rec4_white {animation: 10s headline4_white 1 linear; animation-fill-mode: forwards;}
+#rec5_white {animation: 10s headline5_white 1 linear; animation-fill-mode: forwards;}
+
+
+.headline {
+    display: inline-block;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+.headline p {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 0;
+    margin: 0px;
+}
+#typed1 {
+    animation: typing1, cursor;
+    animation-delay: 300ms;
+    animation-duration: 600ms;
+    animation-timing-function: steps(8, end);
+    animation-fill-mode: both;
+}
+#typed2 {
+    animation: typing2, cursor;
+    animation-delay: 900ms;
+    animation-duration: 2000ms;
+    animation-timing-function: steps(40, end);
+    animation-fill-mode: both;
+    margin-bottom: 35px;
+}
+@keyframes typing1 {
+    0% {width: 0%;}
+    60% {width: 100%;}
+    100% {width: 100%;}
+}
+@keyframes typing2 {
+    0% {width: 0%;}
+    80% {width: 100%;}
+    100% {width: 100%;}
+}
+@keyframes cursor {
+    0% {border-right-color: transparent;}
+    0.1% {border-right-color: #ffffff;}
+    99.9% {border-right-color: #ffffff;}
+    100% {border-right-color: transparent;}
+  }
+
+@media (max-width: 599px) {.headline {font-size: 14px;}}
+@media (min-width: 600px) and (max-width: 799px) {.headline {font-size: 18px;}}
+@media (min-width: 800px) {.headline {font-size: 22px;}}
