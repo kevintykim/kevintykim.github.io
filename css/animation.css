@@ -33,19 +33,6 @@
 #Reverb_screen2 {animation: 8s reverb2 infinite ease-out;}
 #Reverb_screen3 {animation: 8s reverb3 infinite ease-out;}
 #Reverb_screen4 {animation: 8s reverb4 infinite ease-out;}
-/*
-@keyframes reverblogo {
-    0% {opacity: 1;}
-    12% {opacity: 1;}
-    15% {opacity: 0.5;}
-    90% {opacity: 0.5;}
-    93% {opacity: 1;}
-    100% {opacity: 1;}
-}
-#Reverb_logo {animation: 8s reverblogo infinite ease-out;}
-*/
-
-
 
 @keyframes finddine1 {
     0% {transform: translate(960px,360px) scale(0);}
@@ -92,19 +79,6 @@
 #Finddine_screen2 {animation: 8s finddine2 infinite linear;}
 #Finddine_screen3 {animation: 8s finddine3 infinite linear;}
 #Finddine_screen4 {animation: 8s finddine4 infinite linear;}
-/*
-@keyframes finddinelogo {
-    0% {opacity: 1;}
-    11% {opacity: 1;}
-    14% {opacity: 0;}
-    84% {opacity: 0;}
-    85% {opacity: 1;}
-    100% {opacity: 1;}
-}
-#Finddine_logo {animation: 8s finddinelogo infinite ease-in-out;}
-*/
-
-
 
 @keyframes gameplus1 {
     0% {transform: translate(350px,800px);}
@@ -160,17 +134,6 @@
 #Gameplus_screen5 {animation: 8s gameplus5 infinite ease-in-out;}
 #Gameplus_screen6 {animation: 8s gameplus6 infinite ease-in-out;}
 #Reverb_screen1, #Reverb_screen2, #Reverb_screen3, #Reverb_screen4, #Finddine_screen1, #Finddine_screen2, #Finddine_screen3, #Finddine_screen4, #Gameplus_screen1, #Gameplus_screen2, #Gameplus_screen3, #Gameplus_screen4, #Gameplus_screen5, #Gameplus_screen6 {animation-delay: 1500ms; animation-fill-mode: backwards;}
-/*
-@keyframes gamepluslogo {
-    0% {opacity: 0.5;}
-    17% {opacity: 0.5;}
-    20% {opacity: 0;}
-    93% {opacity: 0;}
-    96% {opacity: 0.5;}
-    100% {opacity: 0.5;}
-}
-#Gameplus_logo {animation: 8s gamepluslogo infinite ease-in-out;}
-*/
 
 @keyframes headline1_white {
     0% {opacity: 0;}
@@ -228,7 +191,7 @@
 .headline p {
     overflow: hidden;
     white-space: nowrap;
-    border-right: 4px solid;
+    border-right: 3px solid;
     width: 0;
     margin: 0px;
 }
